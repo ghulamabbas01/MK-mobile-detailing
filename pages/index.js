@@ -1,10 +1,14 @@
-import * as React from 'react'
-import NavigationBar from "../src/layout/navigationBar"
+import * as React from "react";
+// material
+import { Box } from "@mui/material";
+import NavigationBar from "../src/layout/navigationBar";
+import Detaling from "../src/components/Detaling";
 
 export default function Index() {
   return (
-    <div>
+    <Box sx={{ bgcolor: "#000" }}>
       <NavigationBar />
-    </div>
-  )
+      <Detaling />
+    </Box>
+  );
 }
