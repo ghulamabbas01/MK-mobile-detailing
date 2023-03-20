@@ -1,11 +1,16 @@
 import * as React from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import ProTip from "../src/ProTip";
-import Link from "../src/Link";
-import Copyright from "../src/Copyright";
+// material
+import { Box } from "@mui/material";
+import NavigationBar from "../src/layout/navigationBar";
+import Detaling from "../src/components/Detaling";
+import Hero from "../src/components/Hero";
 
 export default function Index() {
-  return <>kjdfjm</>;
+  return (
+    <Box sx={{ bgcolor: "#000" }}>
+      <NavigationBar />
+      <Hero />
+      <Detaling />
+    </Box>
+  );
 }
