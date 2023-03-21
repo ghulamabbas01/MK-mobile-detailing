@@ -3,7 +3,7 @@ import { Typography, Stack, Toolbar, Box, AppBar, Button, IconButton, Link, Cont
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const StackStyled = styled(Stack)(({ theme }) => ({
   "& .MuiLink-root": {
@@ -33,6 +33,10 @@ export default function ButtonAppBar() {
               position: "absolute",
               left: 0,
               top: 0,
+              zIndex: 2,
+              borderBottomRightRadius: "8px",
+              borderBottomLeftRadius: "8px",
+
             }
           }}>
             <img src='/images/logo.png' height="200px" alt='logo' />
@@ -57,17 +61,22 @@ export default function ButtonAppBar() {
           </StackStyled>
           <StackStyled direction="row" justifyContent="center" spacing={1}>
             <IconButton>
-              <FacebookOutlinedIcon />
+              <a href="https://www.instagram.com/" target={"_blank"}>
+                <FacebookOutlinedIcon />
+              </a>
             </IconButton>
             <IconButton>
-              <InstagramIcon />
+              <a href="https://www.instagram.com/" target={"_blank"}>
+                <InstagramIcon />
+              </a>
             </IconButton>
             <IconButton>
-              <PinterestIcon />
+              <a href="https://www.instagram.com/" target={"_blank"}>
+                <WhatsAppIcon />
+              </a>
             </IconButton>
-            <IconButton>
-              <LinkedInIcon />
-            </IconButton>
+
+
           </StackStyled>
         </Toolbar>
       </AppBar>
