@@ -12,15 +12,6 @@ let WhiteColor = "#fff";
 export default function SimpleContainer() {
   return (
     <>
-      <Box
-        sx={{
-          img: {
-            height: "100vh",
-          },
-        }}
-      >
-        <img src="/images/car.png" alt="car" width="100%" />
-      </Box>
       <Container>
         <Stack
           textAlign={"center"}
