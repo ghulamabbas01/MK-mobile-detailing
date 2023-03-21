@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import NavigationBar from "../src/layout/navigationBar";
 import Detaling from "../src/components/Detaling";
 import Hero from "../src/components/Hero";
+import Services from "../src/components/Services";
 
 export default function Index() {
   return (
@@ -11,6 +12,7 @@ export default function Index() {
       <NavigationBar />
       <Hero />
       <Detaling />
+      <Services />
     </Box>
   );
 }
