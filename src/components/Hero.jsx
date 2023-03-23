@@ -7,7 +7,6 @@ import { styled } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import { color } from '@mui/system';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const TextStyle = styled(Box)({

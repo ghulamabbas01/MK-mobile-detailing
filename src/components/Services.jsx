@@ -28,7 +28,7 @@ export default function RowAndColumnSpacing() {
                     },
                 },
             }}>
-                <Typography variant='h4' color="#fff" textAlign="center" >Services</Typography>
+                <Typography variant='h4' color="#ffb800" textAlign="center" fontWeight={600} letterSpacing={2}>Services</Typography>
                 <Box
                     className="hover-sec"
                     sx={{
