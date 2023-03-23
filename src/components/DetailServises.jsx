@@ -13,7 +13,7 @@ let WhiteColor = "#fff";
 export default function ResponsiveGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} py={4}>
+      <Grid container spacing={2} mt={5} mb={7}>
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
             <GroupIcon sx={{ fill: GoldColor, fontSize: "150px" }} />

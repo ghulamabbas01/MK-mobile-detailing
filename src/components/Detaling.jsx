@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import DetailServises from "../components/DetailServises";
-import Slider from "../components/Slider";
+import Slider from "./Slider";
 import Box from "@mui/material/Box";
 
 let GoldColor = "#ffb800";
@@ -15,7 +15,7 @@ export default function SimpleContainer() {
       <Container>
         <Stack
           textAlign={"center"}
-          py={3}
+          mt={5}
           sx={{
             cursor: "pointer",
             ":hover": {
@@ -59,13 +59,11 @@ export default function SimpleContainer() {
           <Typography
             variant="body1"
             fontFamily={"poppins"}
+            color={WhiteColor}
+            textTransform={"capitalize"}
             mt={3}
-            sx={{
-              color: WhiteColor,
-            }}
           >
-            We operate three detailing vehicles throughout the Bay Area. Our
-            goal is to provide our customers with the friendliest, most
+            Our goal is to provide our customers with the friendliest, most
             convenient detailing experience possible. We use the most modern &
             up-to-date water reclamation modules as a part of our detailing
             systems. Our products are eco-friendly.
@@ -73,7 +71,6 @@ export default function SimpleContainer() {
         </Box>
         <Stack>
           <DetailServises />
-          <Slider />
         </Stack>
       </Container>
     </>
