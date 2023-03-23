@@ -28,8 +28,10 @@ export default function MyDocument(props) {
           rel="stylesheet"
         />
         {emotionStyleTags}
+        
       </Head>
-      <body>
+      <body style={{scrollBehavior: "smooth"}}>
+
         <Main />
         <NextScript />
       </body>

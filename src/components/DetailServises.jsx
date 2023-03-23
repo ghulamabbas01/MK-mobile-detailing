@@ -13,18 +13,20 @@ let WhiteColor = "#fff";
 export default function ResponsiveGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} mt={5} mb={7}>
+      <Grid container spacing={2} mt={5} mb={{ xs: 0, md: 7 }}>
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
-            <GroupIcon sx={{ fill: GoldColor, fontSize: "150px" }} />
+            <GroupIcon
+              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
+            />
             <Typography
               variant="h3"
               color={WhiteColor}
-              fontSize={"24px"}
               fontWeight={600}
               fontFamily={"Poppins"}
               letterSpacing={1}
-              lineHeight={"28px"}
+              fontSize={{ xs: "14px", md: "24px" }}
+              lineHeight={{ xs: "16px", md: "28px" }}
               textTransform={"uppercase"}
               //   cursor={"pointer"}
             >
@@ -34,15 +36,17 @@ export default function ResponsiveGrid() {
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
-            <ThumbUpOutlinedIcon sx={{ fill: GoldColor, fontSize: "150px" }} />
+            <ThumbUpOutlinedIcon
+              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
+            />
             <Typography
               variant="h3"
               color={WhiteColor}
-              fontSize={"24px"}
               fontWeight={600}
               fontFamily={"Poppins"}
               letterSpacing={1}
-              lineHeight={"28px"}
+              fontSize={{ xs: "14px", md: "24px" }}
+              lineHeight={{ xs: "16px", md: "28px" }}
               textTransform={"uppercase"}
               //   cursor={"pointer"}
             >
@@ -52,15 +56,17 @@ export default function ResponsiveGrid() {
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
-            <EmojiEventsIcon sx={{ fill: GoldColor, fontSize: "150px" }} />
+            <EmojiEventsIcon
+              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
+            />
             <Typography
               variant="h3"
               color={WhiteColor}
-              fontSize={"24px"}
               fontWeight={600}
               fontFamily={"Poppins"}
               letterSpacing={1}
-              lineHeight={"28px"}
+              fontSize={{ xs: "14px", md: "24px" }}
+              lineHeight={{ xs: "16px", md: "28px" }}
               textTransform={"uppercase"}
               //   cursor={"pointer"}
             >
@@ -71,16 +77,16 @@ export default function ResponsiveGrid() {
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
             <AddIcCallOutlinedIcon
-              sx={{ fill: GoldColor, fontSize: "150px" }}
+              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
             />
             <Typography
               variant="h3"
               color={WhiteColor}
-              fontSize={"24px"}
               fontWeight={600}
               fontFamily={"Poppins"}
               letterSpacing={1}
-              lineHeight={"28px"}
+              fontSize={{ xs: "14px", md: "24px" }}
+              lineHeight={{ xs: "16px", md: "28px" }}
               textTransform={"uppercase"}
               //   cursor={"pointer"}
             >

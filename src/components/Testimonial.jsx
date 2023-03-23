@@ -33,11 +33,12 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: "40px",
-    height: "40px",
+    width: { xs: "24px", md: "40px" },
+    height: { xs: "24px", md: "40px" },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
+    left: "-2%",
     ":hover": {
       backgroundColor: "#e2a812",
       fill: WhiteColor,
@@ -49,11 +50,12 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: "40px",
-    height: "40px",
+    width: { xs: "24px", md: "40px" },
+    height: { xs: "24px", md: "40px" },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
+    right: "-2%",
     ":hover": {
       backgroundColor: "#e2a812",
       fill: WhiteColor,
@@ -64,10 +66,9 @@ const StackStyle = styled(Slider)({
 });
 export default function SimpleSlider() {
   const settings = {
-    // dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <KeyboardArrowRightIcon />,
     prevArrow: <KeyboardArrowLeftIcon />,
@@ -101,9 +102,9 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <Container>
+      <Container sx={{ paddingBottom: { xs: "24px", md: "80px" } }}>
         <Stack
-          marginTop={7}
+          marginTop={{ xs: 3, md: 7 }}
           sx={{
             cursor: "pointer",
             ":hover": {
@@ -132,7 +133,7 @@ export default function SimpleSlider() {
               bgcolor: GoldColor,
               margin: "auto",
               transition: " width 2s",
-              marginBottom: "40px",
+              marginBottom: { xs: "24px", md: "40px" },
             }}
           ></Box>
         </Stack>

@@ -11,7 +11,7 @@ let WhiteColor = "#fff";
 
 export default function SimpleContainer() {
   return (
-    <>
+    <Box>
       <Container>
         <Stack
           textAlign={"center"}
@@ -20,7 +20,7 @@ export default function SimpleContainer() {
             cursor: "pointer",
             ":hover": {
               "& .hover-sec": {
-                width: "530px",
+                width: { xs: "300px", md: "530px" },
                 transition: " width 2s",
               },
             },
@@ -30,7 +30,7 @@ export default function SimpleContainer() {
             variant="h3"
             fontWeight={400}
             fontFamily={"poppins"}
-            fontSize={"48px"}
+            fontSize={{ xs: "24px", md: "48px" }}
             color={WhiteColor}
           >
             Welcome To
@@ -39,7 +39,7 @@ export default function SimpleContainer() {
             variant="h1"
             fontWeight={600}
             fontFamily={"poppins"}
-            fontSize={"48px"}
+            fontSize={{ xs: "24px", md: "48px" }}
             color={GoldColor}
           >
             MK MOBILE DETAILING.
@@ -47,7 +47,7 @@ export default function SimpleContainer() {
           <Box
             className="hover-sec"
             sx={{
-              width: "300px",
+              width: { xs: "150px", md: "300" },
               height: "3px",
               bgcolor: GoldColor,
               margin: "auto",
@@ -62,6 +62,7 @@ export default function SimpleContainer() {
             color={WhiteColor}
             textTransform={"capitalize"}
             mt={3}
+            fontSize={{ xs: "12px", md: "16px" }}
           >
             Our goal is to provide our customers with the friendliest, most
             convenient detailing experience possible. We use the most modern &
@@ -73,6 +74,6 @@ export default function SimpleContainer() {
           <DetailServises />
         </Stack>
       </Container>
-    </>
+    </Box>
   );
 }

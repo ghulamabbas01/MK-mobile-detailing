@@ -18,11 +18,12 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: "40px",
-    height: "40px",
+    width: { xs: "24px", md: "40px" },
+    height: { xs: "24px", md: "40px" },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
+    left: "-2%",
     ":hover": {
       backgroundColor: "#e2a812",
       fill: WhiteColor,
@@ -34,11 +35,12 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: "40px",
-    height: "40px",
+    width: { xs: "24px", md: "40px" },
+    height: { xs: "24px", md: "40px" },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
+    right: "-2%",
     ":hover": {
       backgroundColor: "#e2a812",
       fill: WhiteColor,
@@ -49,7 +51,6 @@ const StackStyle = styled(Slider)({
 });
 export default function SimpleSlider() {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -84,88 +85,115 @@ export default function SimpleSlider() {
     ],
   };
   return (
-    <Container>
-      <Stack
-        marginTop={5}
-        sx={{
-          cursor: "pointer",
-          ":hover": {
-            "& .hover-sec": {
-              width: "250px",
-              transition: " width 2s",
-            },
-          },
-        }}
+    <Box
+      sx={{
+        backgroundImage: "url(/images/backgroundImg2.jpg)",
+
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        color: "#fff",
+        mt: 6,
+        position: "relative",
+        overflow: "hidden",
+        zIndex: 0,
+        "&:before": {
+          content: '""',
+          position: "absolute",
+          height: "100%",
+          width: "100%",
+          background: "#000000bd",
+          zIndex: 1,
+          left: 0,
+        },
+      }}
+    >
+      <Container
+        id={"OurWork"}
+        sx={{ position: "relative", zIndex: "2", paddingBottom: "100px" }}
       >
-        <Typography
-          variant="h3"
-          color={GoldColor}
-          textAlign={"center"}
-          fontWeight={500}
-          letterSpacing={3}
-          mt={4}
-        >
-          Our Work
-        </Typography>
-        <Box
-          className="hover-sec"
+        <Stack
+          marginTop={5}
           sx={{
-            width: "150px",
-            height: "3px",
-            bgcolor: GoldColor,
-            margin: "auto",
-            transition: " width 2s",
-            marginBottom: "40px",
+            cursor: "pointer",
+            ":hover": {
+              "& .hover-sec": {
+                width: "250px",
+                transition: " width 2s",
+              },
+            },
           }}
-        ></Box>
-      </Stack>
-      <StackStyle {...settings}>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg1.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg2.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg3.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg4.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg5.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg6.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg7.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg8.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg9.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg10.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg11.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg12.jpg" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg13.avif" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg14.avif" width={"100%"} height={200} />
-        </Box>
-        <Box className="BorderSec">
-          <img src="../slider/sliderImg15.avif" width={"100%"} height={200} />
-        </Box>
-      </StackStyle>
-    </Container>
+        >
+          <Typography
+            variant="h3"
+            color={GoldColor}
+            textAlign={"center"}
+            fontWeight={500}
+            letterSpacing={3}
+            mt={4}
+          >
+            Our Work
+          </Typography>
+          <Box
+            className="hover-sec"
+            sx={{
+              width: "150px",
+              height: "3px",
+              bgcolor: GoldColor,
+              margin: "auto",
+              transition: " width 2s",
+              marginBottom: "40px",
+            }}
+          ></Box>
+        </Stack>
+        <StackStyle {...settings}>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg1.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg2.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg3.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg4.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg5.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg6.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg7.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg8.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg9.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg10.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg11.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg12.jpg" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg13.avif" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg14.avif" width={"100%"} height={200} />
+          </Box>
+          <Box className="BorderSec">
+            <img src="../slider/sliderImg15.avif" width={"100%"} height={200} />
+          </Box>
+        </StackStyle>
+      </Container>
+    </Box>
   );
 }

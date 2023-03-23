@@ -17,7 +17,6 @@ export default function Index() {
       <NavigationBar />
       <Hero />
       <Detaling />
-      <Services />
       <Pricing />
       <Services />
       <Slider />
