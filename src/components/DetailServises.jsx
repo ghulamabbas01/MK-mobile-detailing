@@ -13,10 +13,10 @@ let WhiteColor = "#fff";
 export default function ResponsiveGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} py={12}>
+      <Grid container spacing={2} py={4}>
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
-            <GroupIcon sx={{ fill: GoldColor, fontSize: "100px" }} />
+            <GroupIcon sx={{ fill: GoldColor, fontSize: "150px" }} />
             <Typography
               variant="h3"
               color={WhiteColor}
@@ -34,7 +34,7 @@ export default function ResponsiveGrid() {
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
-            <ThumbUpOutlinedIcon sx={{ fill: GoldColor, fontSize: "100px" }} />
+            <ThumbUpOutlinedIcon sx={{ fill: GoldColor, fontSize: "150px" }} />
             <Typography
               variant="h3"
               color={WhiteColor}
@@ -52,7 +52,7 @@ export default function ResponsiveGrid() {
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
-            <EmojiEventsIcon sx={{ fill: GoldColor, fontSize: "100px" }} />
+            <EmojiEventsIcon sx={{ fill: GoldColor, fontSize: "150px" }} />
             <Typography
               variant="h3"
               color={WhiteColor}
@@ -71,7 +71,7 @@ export default function ResponsiveGrid() {
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
             <AddIcCallOutlinedIcon
-              sx={{ fill: GoldColor, fontSize: "100px" }}
+              sx={{ fill: GoldColor, fontSize: "150px" }}
             />
             <Typography
               variant="h3"

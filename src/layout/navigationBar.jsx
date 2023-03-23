@@ -75,8 +75,6 @@ export default function ButtonAppBar() {
                 <WhatsAppIcon />
               </a>
             </IconButton>
-
-
           </StackStyled>
         </Toolbar>
       </AppBar>
