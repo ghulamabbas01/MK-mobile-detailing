@@ -9,7 +9,7 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 let GoldColor = "#ffb800";
 let WhiteColor = "#fff";
 
-const StackStyle = styled(Slider)({
+const StackStyle = styled(Slider)(({ theme }) => ({
   ".BorderSec": {
     border: "2px solid #fff",
   },
@@ -18,12 +18,16 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: { xs: "24px", md: "40px" },
-    height: { xs: "24px", md: "40px" },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
     left: "-2%",
+    height: 40,
+    width: 40,
+    [theme.breakpoints.down("md")]: {
+      height: 24,
+      width: 24,
+    },
     ":hover": {
       backgroundColor: "#e2a812",
       fill: WhiteColor,
@@ -35,11 +39,11 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: { xs: "24px", md: "40px" },
-    height: { xs: "24px", md: "40px" },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
+    height: 40,
+    width: 40,
     right: "-2%",
     ":hover": {
       backgroundColor: "#e2a812",
@@ -47,8 +51,12 @@ const StackStyle = styled(Slider)({
       border: "2px solid #fff",
       transition: "all 0.3s ease-in-out",
     },
+    [theme.breakpoints.down("md")]: {
+      height: 24,
+      width: 24,
+    },
   },
-});
+}));
 export default function SimpleSlider() {
   const settings = {
     infinite: true,

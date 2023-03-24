@@ -193,7 +193,7 @@ export default function VariableWidthGrid() {
                       <span>clean windows</span>
                     </li>
                   </ul>
-                  <Button variant="contained" disableElevation>
+                  <Button type="submit" variant="contained" disableElevation>
                     Order Now
                   </Button>
                 </Box>
@@ -237,7 +237,7 @@ export default function VariableWidthGrid() {
                     </li>
                   </ul>
 
-                  <Button variant="contained" disableElevation>
+                  <Button type="submit" variant="contained" disableElevation>
                     Order Now
                   </Button>
                 </Box>
@@ -303,7 +303,7 @@ export default function VariableWidthGrid() {
                       <span>Extra cost for cut and phlish ($100.00)</span>
                     </li>
                   </ul>
-                  <Button variant="contained" disableElevation>
+                  <Button type="submit" variant="contained" disableElevation>
                     Order Now
                   </Button>
                 </Box>
@@ -340,7 +340,7 @@ export default function VariableWidthGrid() {
                       <span>Headlight Restoration</span>
                     </li>
                   </ul>
-                  <Button variant="contained" disableElevation>
+                  <Button type="submit" variant="contained" disableElevation>
                     Order Now
                   </Button>
                 </Box>

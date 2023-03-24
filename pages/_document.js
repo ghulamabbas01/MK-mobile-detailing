@@ -12,8 +12,10 @@ export default function MyDocument(props) {
     <Html lang="en" className={roboto.className}>
       <Head>
         {/* PWA primary color */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Our Goal Is To Provide Our Customers With The Friendliest, Most Convenient Detailing Experience Possible. We Use The Most Modern & Up-To-Date Water Reclamation Modules As A Part Of Our Detailing Systems. Our Products Are Eco-Friendly." />
         <meta name="theme-color" content={theme.palette.primary.main} />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.png" />
         <meta name="emotion-insertion-point" content="" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

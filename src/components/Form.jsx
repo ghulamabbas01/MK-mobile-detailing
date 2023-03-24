@@ -121,6 +121,7 @@ export default function Form() {
                     variant="contained"
                     size="large"
                     color="warning"
+                    type="submit"
                     fullWidth
                     sx={{
                       textTransform: "capitalize",

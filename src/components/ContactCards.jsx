@@ -115,7 +115,7 @@ export default function ContactCard() {
             Skype:
           </Typography>
           <Typography variant="h5" color="common.white">
-            We Are Online: Monday – Saturday, 9 am to 5 pm
+            We Are Online: Monday – Sunday, 9 am to 5 pm
           </Typography>
           <Link
             variant="h5"

@@ -10,7 +10,7 @@ import Radio from "@mui/material/Radio";
 let GoldColor = "#ffb800";
 let WhiteColor = "#fff";
 
-const StackStyle = styled(Slider)({
+const StackStyle = styled(Slider)(({ theme }) => ({
   ".BorderSec": {
     backgroundImage: "linear-gradient(#ffcd00, #e24d12)",
 
@@ -18,9 +18,9 @@ const StackStyle = styled(Slider)({
     border: "3px solid #fff",
     borderTopLeftRadius: "100px",
     borderTopRightRadius: "100px",
-    height: "250px",
+    height: "300px",
     textAlign: "center",
-    padding: "18px 0px",
+    padding: "32px 0px",
 
     img: {
       margin: "0 auto",
@@ -33,8 +33,12 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: { xs: "24px", md: "40px" },
-    height: { xs: "24px", md: "40px" },
+    height: 40,
+    width: 40,
+    [theme.breakpoints.down("md")]: {
+      height: 24,
+      width: 24,
+    },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
@@ -50,8 +54,12 @@ const StackStyle = styled(Slider)({
     fill: WhiteColor,
     backgroundColor: GoldColor,
     border: "2px solid #fff",
-    width: { xs: "24px", md: "40px" },
-    height: { xs: "24px", md: "40px" },
+    height: 40,
+    width: 40,
+    [theme.breakpoints.down("md")]: {
+      height: 24,
+      width: 24,
+    },
     borderRadius: "50%",
     zIndex: "2",
     padding: "4px",
@@ -63,7 +71,7 @@ const StackStyle = styled(Slider)({
       transition: "all 0.3s ease-in-out",
     },
   },
-});
+}));
 export default function SimpleSlider() {
   const settings = {
     infinite: true,
@@ -151,6 +159,7 @@ export default function SimpleSlider() {
               fontWeight={600}
               letterSpacing={2}
               mt={2}
+              mb={2}
             >
               ALEX Z.
             </Typography>
@@ -194,6 +203,7 @@ export default function SimpleSlider() {
               fontWeight={600}
               letterSpacing={2}
               mt={2}
+              mb={2}
             >
               ALEX Z.
             </Typography>
@@ -237,6 +247,7 @@ export default function SimpleSlider() {
               fontWeight={600}
               letterSpacing={2}
               mt={2}
+              mb={2}
             >
               ALEX Z.
             </Typography>
@@ -280,6 +291,7 @@ export default function SimpleSlider() {
               fontWeight={600}
               letterSpacing={2}
               mt={2}
+              mb={2}
             >
               ALEX Z.
             </Typography>

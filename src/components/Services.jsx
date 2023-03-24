@@ -68,6 +68,7 @@ export default function RowAndColumnSpacing() {
                 <img src="/images/services1.jpg" width="100%" alt="perfume" />
               </Box>
               <Button
+                type="submit"
                 variant="contained"
                 size="large"
                 fullWidth
@@ -92,6 +93,7 @@ export default function RowAndColumnSpacing() {
                 <img src="/images/services2.jpg" width="100%" alt="perfume" />
               </Box>
               <Button
+                type="submit"
                 variant="contained"
                 size="large"
                 fullWidth
@@ -102,7 +104,7 @@ export default function RowAndColumnSpacing() {
                   "&:hover": { background: GoldColor },
                 }}
               >
-                Mobile Detailing
+                Engine Cleaning
               </Button>
             </Stack>
           </Grid>
@@ -116,6 +118,7 @@ export default function RowAndColumnSpacing() {
                 <img src="/images/services3.jpg" width="100%" alt="perfume" />
               </Box>
               <Button
+                type="submit"
                 variant="contained"
                 size="large"
                 fullWidth
@@ -140,6 +143,7 @@ export default function RowAndColumnSpacing() {
                 <img src="/images/services4.jpg" width="100%" alt="perfume" />
               </Box>
               <Button
+                type="submit"
                 variant="contained"
                 size="large"
                 fullWidth
@@ -150,7 +154,7 @@ export default function RowAndColumnSpacing() {
                   "&:hover": { background: GoldColor },
                 }}
               >
-                Mobile Detailing
+                Interior Detailing
               </Button>
             </Stack>
           </Grid>
@@ -164,6 +168,7 @@ export default function RowAndColumnSpacing() {
                 <img src="/images/services5.jpg" width="100%" alt="perfume" />
               </Box>
               <Button
+                type="submit"
                 variant="contained"
                 size="large"
                 fullWidth
@@ -188,6 +193,7 @@ export default function RowAndColumnSpacing() {
                 <img src="/images/services6.jpg" width="100%" alt="perfume" />
               </Box>
               <Button
+                type="submit"
                 variant="contained"
                 size="large"
                 fullWidth
@@ -199,7 +205,7 @@ export default function RowAndColumnSpacing() {
                   "&:hover": { background: GoldColor },
                 }}
               >
-                Interior Detailing
+                Pet Hair Removal
               </Button>
             </Stack>
           </Grid>
