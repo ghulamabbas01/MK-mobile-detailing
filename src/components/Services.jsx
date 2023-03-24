@@ -190,7 +190,7 @@ export default function RowAndColumnSpacing() {
                 display="flex"
                 sx={{ img: { height: { xs: 180, md: "274px" } } }}
               >
-                <img src="/images/services6.jpg" width="100%" alt="perfume" />
+                <img src="/images/services7.jpg" width="100%" alt="perfume" />
               </Box>
               <Button
                 type="submit"

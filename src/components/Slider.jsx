@@ -11,7 +11,7 @@ let WhiteColor = "#fff";
 
 const StackStyle = styled(Slider)(({ theme }) => ({
   ".BorderSec": {
-    border: "2px solid #fff",
+    border: "2px solid #ffb800",
   },
 
   ".slick-prev": {
@@ -156,26 +156,25 @@ export default function SimpleSlider() {
         </Stack>
         <StackStyle {...settings}>
           <Box className="BorderSec">
-            <img src="../slider/sliderImg1.jpg" width={"100%"} height={200} />
+            <img src="../slider/ourWork (3).jpeg" width={"100%"} height={200} />
           </Box>
           <Box className="BorderSec">
-            <img src="../slider/sliderImg2.jpg" width={"100%"} height={200} />
+            <img src="../slider/ourWork (1).jpeg" width={"100%"} height={200} />
           </Box>
           <Box className="BorderSec">
-            <img src="../slider/sliderImg3.jpg" width={"100%"} height={200} />
+            <img src="../slider/ourWork (2).jpeg" width={"100%"} height={200} />
+          </Box>
+
+          <Box className="BorderSec">
+            <img src="../slider/ourWork (4).jpeg" width={"100%"} height={200} />
           </Box>
           <Box className="BorderSec">
-            <img src="../slider/sliderImg4.jpg" width={"100%"} height={200} />
+            <img src="../slider/ourWork (6).jpeg" width={"100%"} height={200} />
           </Box>
           <Box className="BorderSec">
-            <img src="../slider/sliderImg5.jpg" width={"100%"} height={200} />
+            <img src="../slider/ourWork (5).jpeg" width={"100%"} height={200} />
           </Box>
-          <Box className="BorderSec">
-            <img src="../slider/sliderImg6.jpg" width={"100%"} height={200} />
-          </Box>
-          <Box className="BorderSec">
-            <img src="../slider/sliderImg7.jpg" width={"100%"} height={200} />
-          </Box>
+
           <Box className="BorderSec">
             <img src="../slider/sliderImg8.jpg" width={"100%"} height={200} />
           </Box>
@@ -198,7 +197,7 @@ export default function SimpleSlider() {
             <img src="../slider/sliderImg14.avif" width={"100%"} height={200} />
           </Box>
           <Box className="BorderSec">
-            <img src="../slider/sliderImg15.avif" width={"100%"} height={200} />
+            <img src="../slider/sliderImg1.jpg" width={"100%"} height={200} />
           </Box>
         </StackStyle>
       </Container>

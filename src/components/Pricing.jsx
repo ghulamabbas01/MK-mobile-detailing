@@ -184,7 +184,7 @@ export default function VariableWidthGrid() {
                       <span>clean bumpers (chrome)</span>
                     </li>
                     <li>
-                      <span>vacuum interiop and wash floor mats</span>
+                      <span>vacuum interior and wash floor mats</span>
                     </li>
                     <li>
                       <span>wipe down dash and vinyl</span>
