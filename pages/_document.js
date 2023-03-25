@@ -14,7 +14,6 @@ export default function MyDocument(props) {
         {/* PWA primary color */}
         {/* meta tages */}
         {/* twitter meta tages  */}
-        <title>mk mobile detailing</title>
 
         <meta name="twitter:card" content="app" />
         <meta
@@ -72,6 +71,7 @@ export default function MyDocument(props) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
 
         <meta />
+        <title>mk mobile detailing</title>
         {/* meta tages  */}
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.png" />
