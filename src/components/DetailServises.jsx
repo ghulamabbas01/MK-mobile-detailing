@@ -17,7 +17,7 @@ export default function ResponsiveGrid() {
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
             <GroupIcon
-              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
+              sx={{ fill: GoldColor, fontSize: { xs: 50, md: "100px" } }}
             />
             <Typography
               variant="h3"
@@ -37,7 +37,7 @@ export default function ResponsiveGrid() {
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
             <ThumbUpOutlinedIcon
-              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
+              sx={{ fill: GoldColor, fontSize: { xs: 50, md: "100px" } }}
             />
             <Typography
               variant="h3"
@@ -57,7 +57,7 @@ export default function ResponsiveGrid() {
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
             <EmojiEventsIcon
-              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
+              sx={{ fill: GoldColor, fontSize: { xs: 50, md: "100px" } }}
             />
             <Typography
               variant="h3"
@@ -77,7 +77,7 @@ export default function ResponsiveGrid() {
         <Grid item xs={6} sm={6} md={3}>
           <Box textAlign={"center"} sx={{ cursor: "pointer" }}>
             <AddIcCallOutlinedIcon
-              sx={{ fill: GoldColor, fontSize: { xs: 75, md: "150px" } }}
+              sx={{ fill: GoldColor, fontSize: { xs: 50, md: "100px" } }}
             />
             <Typography
               variant="h3"

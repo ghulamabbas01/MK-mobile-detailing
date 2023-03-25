@@ -68,7 +68,12 @@ export default function ButtonAppBar() {
           >
             <img src="/images/logo.png" alt="logo" />
           </Box>
-          <StackStyled direction="row" justifyContent="center" spacing={3}>
+          <StackStyled
+            direction="row"
+            justifyContent="center"
+            spacing={3}
+            fontFamily={"Poppins"}
+          >
             <Link href="#home" underline="none" color={"#ffb800"}>
               {"Home"}
             </Link>

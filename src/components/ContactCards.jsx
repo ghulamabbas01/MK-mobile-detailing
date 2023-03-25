@@ -56,12 +56,14 @@ export default function ContactCard() {
             Whatsapp:
           </Typography>
           <Link
+            display={"inline-block"}
             variant="h5"
             href="https://wa.me/+12792082992"
             underline="none"
             target="_blank"
             color="common.white"
             fontWeight={400}
+            width={"30%"}
           >
             +12792082992
           </Link>
@@ -97,6 +99,8 @@ export default function ContactCard() {
             color="common.white"
             fontWeight={400}
             fontSize={{ xs: 18, md: 24 }}
+            display={"inline-block"}
+            width={"50%"}
           >
             mkmobiledetailing@yahoo.com
           </Link>
@@ -124,6 +128,8 @@ export default function ContactCard() {
             target="_blank"
             color="common.white"
             fontWeight={400}
+            display={"inline-block"}
+            width={"40%"}
           >
             Mooneer Khair
           </Link>

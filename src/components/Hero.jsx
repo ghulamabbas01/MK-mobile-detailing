@@ -96,7 +96,6 @@ function SwipeableTextMobileStepper() {
                     letterSpacing={1}
                     mb={2}
                   >
-                    {" "}
                     {step.heading}
                   </Typography>
                   <Stack spacing={2}>
@@ -107,7 +106,6 @@ function SwipeableTextMobileStepper() {
                       fontWeight={400}
                       textTransform="uppercase"
                     >
-                      {" "}
                       {step.subHeading}
                     </Typography>
                     <Box>
