@@ -61,18 +61,27 @@ export default function FormComponent() {
     onSubmit: async (values, { resetForm }) => {
       try {
         setLoading(true);
-        await axios.post("/api/api", values).then(() => {
-          alert("Successfully sent message.");
-          setLoading(false);
-          resetForm();
-        });
+        await axios
+          .post("/api/api", values)
+          .then(() => {
+            alert("Successfully sent message.");
+            setLoading(false);
+            resetForm();
+          })
+          .catch(() => {
+            alert("Something went wrong!");
+            setLoading(false);
+            resetForm();
+          });
       } catch (error) {
         console.error(error);
       }
     },
   });
   const { errors, touched, handleSubmit, getFieldProps } = formik;
-
+  const accountSid = process.env.ACCOUNT_SID;
+  const authToken = process.env.SERVICE_SID;
+  console.log(accountSid, authToken);
   return (
     <FormikProvider value={formik}>
       <Form autoComplete="off" noValidate onSubmit={handleSubmit}>
