@@ -34,7 +34,7 @@ export default function RowAndColumnSpacing() {
           variant="h4"
           color="#ffb800"
           textAlign="center"
-          fontWeight={600}
+          fontWeight={500}
           letterSpacing={2}
           fontSize={48}
         >

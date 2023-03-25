@@ -112,6 +112,8 @@ function SwipeableTextMobileStepper() {
                     </Typography>
                     <Box>
                       <Button
+                        href="#Pricing"
+                        type="submit"
                         variant="contained"
                         size="large"
                         sx={{
