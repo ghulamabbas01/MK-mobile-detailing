@@ -9,7 +9,7 @@ export default async function handler(req, res) {
       try {
         await client.messages
           .create({
-            body: `Hi, ${body.firstName} ${body.lastName} is here from ${body.address}. This is my  email account: ${body.email} and My mobile number is ${body.phone}`,
+            body: `Hello, ${body.firstName} ${body.lastName} Is  From ${body.address}. This Is My Email Account: ${body.email} And My mobile number is ${body.phone}`,
             messagingServiceSid: process.env.SERVICE_SID,
             to: process.env.PHONE_NUMBER,
           })
