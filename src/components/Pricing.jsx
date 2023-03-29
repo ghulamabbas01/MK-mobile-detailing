@@ -79,7 +79,7 @@ const GridItemStyle = styled(Grid)({
     width: "70%",
     marginTop: "18px",
     backgroundColor: WhiteColor,
-    color: "#000",
+    color: GoldColor,
     fontWeight: 900,
     letterSpacing: 2,
     marginBottom: "18px",
@@ -95,6 +95,18 @@ const GridItemStyle = styled(Grid)({
 });
 
 export default function VariableWidthGrid() {
+  // plan function
+  function SillerPlan() {
+    var email = "mkmobiledetailing@yahoo.com";
+    var subject =
+      "Thanku You For Reaching Out. We Will Get Back To You As Soon As Possible ";
+    var msgBody =
+      "Write Your Services Need To Be Done And Phone Number Please ?";
+
+    open(`mailto:${email}?subject=${subject}&body=${msgBody} `);
+  }
+  // plan function
+
   return (
     <Box
       id={"Pricing"}
@@ -193,8 +205,13 @@ export default function VariableWidthGrid() {
                       <span>clean windows</span>
                     </li>
                   </ul>
-                  <Button type="submit" variant="contained" disableElevation>
-                    Fill Form
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    disableElevation
+                    onClick={SillerPlan}
+                  >
+                    Order Now
                   </Button>
                 </Box>
               </Item>
@@ -237,8 +254,13 @@ export default function VariableWidthGrid() {
                     </li>
                   </ul>
 
-                  <Button type="submit" variant="contained" disableElevation>
-                    Fill Form
+                  <Button
+                    onClick={SillerPlan}
+                    type="submit"
+                    variant="contained"
+                    disableElevation
+                  >
+                    Order Now
                   </Button>
                 </Box>
               </Item>
@@ -303,8 +325,13 @@ export default function VariableWidthGrid() {
                       <span>Extra cost for cut and phlish ($100.00)</span>
                     </li>
                   </ul>
-                  <Button type="submit" variant="contained" disableElevation>
-                    Fill Form
+                  <Button
+                    onClick={SillerPlan}
+                    type="submit"
+                    variant="contained"
+                    disableElevation
+                  >
+                    Order Now
                   </Button>
                 </Box>
               </Item>
@@ -340,8 +367,13 @@ export default function VariableWidthGrid() {
                       <span>Headlight Restoration</span>
                     </li>
                   </ul>
-                  <Button type="submit" variant="contained" disableElevation>
-                    Fill Form
+                  <Button
+                    onClick={SillerPlan}
+                    type="submit"
+                    variant="contained"
+                    disableElevation
+                  >
+                    Order Now
                   </Button>
                 </Box>
               </Item>
