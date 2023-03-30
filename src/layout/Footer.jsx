@@ -77,7 +77,8 @@ export default function Footer() {
                   <Link
                     display={"inline-block"}
                     width={"50%"}
-                    href="https://api.whatsapp.com/send/?phone=0012792082992&text&type=phone_number&app_absent=0"
+                    href="https://wa.me/+12792082992"
+                    target="_blank"
                     underline="hover"
                   >
                     <span style={{ fontWeight: "600" }}>
@@ -101,6 +102,7 @@ export default function Footer() {
                     href="mailto:Mooneerkhair@gmail.com"
                     underline="hover"
                     display={"inline-block"}
+                    target="_blank"
                     width={"60%"}
                   >
                     <span style={{ fontWeight: "600" }}>
@@ -121,10 +123,10 @@ export default function Footer() {
                     </span>
                   </Link>
                   <Link
+                    target="_blank"
                     underline="hover"
                     display={"inline-block"}
                     href="https://www.google.com/maps/place/28+Jacqueline+Ct,+Daly+City,+CA+94014,+USA/@37.6999754,-122.4172862,15.3z/data=!4m6!3m5!1s0x808f7ecda15db1d3:0xf1912bee74cbd012!8m2!3d37.6999998!4d-122.414495!16s%2Fg%2F11c11v0kqd"
-                    target={"_blank"}
                   >
                     <span style={{ fontWeight: "600" }}>
                       <AddLocationSharpIcon
