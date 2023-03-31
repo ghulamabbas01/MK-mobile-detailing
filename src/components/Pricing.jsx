@@ -95,11 +95,40 @@ const GridItemStyle = styled(Grid)({
 });
 
 export default function VariableWidthGrid() {
-  // plan function
+  // plan function 1
   function SillerPlan() {
     var email = "mkmobiledetailing@yahoo.com";
-    var subject =
-      "Thanku You For Reaching Out. We Will Get Back To You As Soon As Possible ";
+    var subject = "I Need SILVER Plan $250";
+    var msgBody =
+      "Write Your Services Need To Be Done And Phone Number Please ?";
+
+    open(`mailto:${email}?subject=${subject}&body=${msgBody} `);
+  }
+  // plan function
+  // plan function 2
+  function GoldPlan() {
+    var email = "mkmobiledetailing@yahoo.com";
+    var subject = "I Need GOLD Plan $350";
+    var msgBody =
+      "Write Your Services Need To Be Done And Phone Number Please ?";
+
+    open(`mailto:${email}?subject=${subject}&body=${msgBody} `);
+  }
+  // plan function
+  // plan function3
+  function PlatinumPlan() {
+    var email = "mkmobiledetailing@yahoo.com";
+    var subject = "I Need PLATINUM Plan $500";
+    var msgBody =
+      "Write Your Services Need To Be Done And Phone Number Please ?";
+
+    open(`mailto:${email}?subject=${subject}&body=${msgBody} `);
+  }
+  // plan function
+  // plan function4
+  function Additinal() {
+    var email = "mkmobiledetailing@yahoo.com";
+    var subject = "I Need ADDITIONAL SERVICES";
     var msgBody =
       "Write Your Services Need To Be Done And Phone Number Please ?";
 
@@ -255,7 +284,7 @@ export default function VariableWidthGrid() {
                   </ul>
 
                   <Button
-                    onClick={SillerPlan}
+                    onClick={GoldPlan}
                     type="submit"
                     variant="contained"
                     disableElevation
@@ -326,7 +355,7 @@ export default function VariableWidthGrid() {
                     </li>
                   </ul>
                   <Button
-                    onClick={SillerPlan}
+                    onClick={PlatinumPlan}
                     type="submit"
                     variant="contained"
                     disableElevation
@@ -368,7 +397,7 @@ export default function VariableWidthGrid() {
                     </li>
                   </ul>
                   <Button
-                    onClick={SillerPlan}
+                    onClick={Additinal}
                     type="submit"
                     variant="contained"
                     disableElevation

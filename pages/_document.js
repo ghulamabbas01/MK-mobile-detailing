@@ -16,21 +16,10 @@ export default function MyDocument(props) {
         {/* twitter meta tages  */}
 
         <meta name="twitter:card" content="app" />
-        <meta
-          name="twitter:site"
-          content="https://www.mkmobiledetailing.net/"
-        />
+        <meta name="twitter:site" content="MK Mobile Detailing" />
         <meta
           name="description"
-          content="MK Mobile Detailing is a mobile car detailing service based in [28 Jacqueline Ct ca daly city 94014]. Their website serves as a platform for potential customers to learn more about their services and make appointments.
-
-          The website features a clean and modern design, with a color scheme that is easy on the eyes. The homepage showcases the services offered by MK Mobile Detailing, including car washing, detailing, and waxing. Each service has a brief description and a call-to-action button that directs the user to the booking page.
-          
-          The website's navigation is user-friendly, with clear links to the About Us, Services, Gallery, and Contact pages. The About Us page provides background information on the company, including its mission, vision, and values. The Services page offers detailed descriptions of each service offered by MK Mobile Detailing, including pricing information.
-          
-          The Gallery page showcases pictures of their previous work, giving potential customers an idea of the quality of service they can expect. The Contact page provides a form for users to fill out to schedule an appointment or request more information. The page also lists the company's contact information, including phone number and email address.
-          
-          Overall, the MK Mobile Detailing website effectively communicates the services offered by the company, provides a user-friendly interface for customers to schedule appointments, and showcases their previous work. It is well-designed and optimized for mobile devices, making it easy for users to access the website from their smartphones or tablets."
+          content="MK Mobile Detailing is a Mobile Car Detailing Service. Interior And Exterior Detail,Mold Remove ,Water Intrusion , Water Damage, Polish, Scratch Remove, Odor Remove, Touch Up Pain, Engine Cleaning,Pete Hair Remove,Buffing,Clay bar, Wax "
         />
         <meta name="twitter:app:name:iphone" content="mk mobile detaling" />
         <meta name="twitter:app:name:ipad" content="mk mobile detaling" />
@@ -39,22 +28,15 @@ export default function MyDocument(props) {
         {/* og tages  */}
         <meta property="og:title" content="mk mobile detailing" />
         <meta property="og:site_name" content="mk mobile detailing" />
-        <meta property="og:url" content="https://www.mkmobiledetailing.net" />
+        <meta property="og:url" content="MK Mobile Detailing Services" />
         <meta
           property="og:description"
-          content="MK Mobile Detailing is a mobile car detailing service based in [28 Jacqueline Ct ca daly city 94014]. Their website serves as a platform for potential customers to learn more about their services and make appointments.
-
-          The website features a clean and modern design, with a color scheme that is easy on the eyes. The homepage showcases the services offered by MK Mobile Detailing, including car washing, detailing, and waxing. Each service has a brief description and a call-to-action button that directs the user to the booking page.
-          
-          The website's navigation is user-friendly, with clear links to the About Us, Services, Gallery, and Contact pages. The About Us page provides background information on the company, including its mission, vision, and values. The Services page offers detailed descriptions of each service offered by MK Mobile Detailing, including pricing information.
+          content="MK Mobile Detailing is a Mobile Car Detailing Service. Interior And Exterior Detail,Mold Remove ,Water Intrusion , Water Damage, Polish, Scratch Remove, Odor Remove, Touch Up Pain, Engine Cleaning,Pete Hair Remove,Buffing,Clay bar, Wax 
           
        "
         />
         <meta property="og:type" content="profile" />
-        <meta
-          property="og:image"
-          content="https://www.mkmobiledetailing.net/images/car1.jpg"
-        />
+        <meta property="og:image" content="https://i.ibb.co/GtNQrDC/logo.png" />
         {/* og tages  */}
 
         <meta name="robots" content="index,follow" />
@@ -65,13 +47,13 @@ export default function MyDocument(props) {
         <meta property="dc:creator" content="Abbas Khan" />
         <meta
           property="keywords"
-          content="MK Mobile Detailing,MK Mobile Detailing services,mk mobile detailing services, mk mobile car detailing, m&k mobile detailing, mk detailing ontario, mk detailing, bk mobile detailing, b k detailing, ck mobile detailing, c&m mobile detailing, d&k mobile, g's mobile detailing, h&k detailing, i m detailing, j mobile detailing, nk car detailing, mk auto detail ontario ca ultra mobile detailing, yk detailing, 2k car detailing, 3k detailing, 4k mobile detailing services, 4k mobile auto detailing, 6 star detailing, mobile detailing mobile detailing near me, mobile detailing setup, auto mobile detailing, car mobile detailing near me, mobile detailing companies, whats mobile detailing,car detailing car detailing, near me mobile ,car detailing near me, car detailing kit, mobile car detailing "
+          content="mk mobile,mobile Services,usa mobile Services,new car watch,usa mobile detailing Services,mobile detailing equipment,mobile detailing business,mobile detailing near me,mobile detailing prices,Mobile Car Wash And Detailing,Mobile Detailing Services,Auto Detailing,Mobile Auto Detailing,Mobile Auto Detailing,Professional Mobile Detailing,Auto Detailing Packages & Pricing,mk,mk mobile,mkmobile,mkmobiledetailing,MK Mobile Detailing,MK Mobile Detailing services,mk mobile detailing services, mk mobile car detailing, m&k mobile detailing, mk detailing ontario, mk detailing, bk mobile detailing, b k detailing, ck mobile detailing, c&m mobile detailing, d&k mobile, g's mobile detailing, h&k detailing, i m detailing, j mobile detailing, nk car detailing, mk auto detail ontario ca ultra mobile detailing, yk detailing, 2k car detailing, 3k detailing, 4k mobile detailing services, 4k mobile auto detailing, 6 star detailing, mobile detailing mobile detailing near me, mobile detailing setup, auto mobile detailing, car mobile detailing near me, mobile detailing companies, whats mobile detailing,car detailing car detailing, near me mobile ,car detailing near me, car detailing kit, mobile car detailing "
         />
-        <meta name="application-name" content="MK Mobile Detailing" />
+        <meta name="application-name" content="MK Mobile Detailing Services" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
 
         <meta />
-        <title>mk mobile detailing</title>
+        <title>Mk Mobile Detailing</title>
         {/* meta tages  */}
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.png" />
