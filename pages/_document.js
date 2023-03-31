@@ -21,13 +21,13 @@ export default function MyDocument(props) {
           name="description"
           content="MK Mobile Detailing is a Mobile Car Detailing Service. Interior And Exterior Detail,Mold Remove ,Water Intrusion , Water Damage, Polish, Scratch Remove, Odor Remove, Touch Up Pain, Engine Cleaning,Pete Hair Remove,Buffing,Clay bar, Wax "
         />
-        <meta name="twitter:app:name:iphone" content="mk mobile detaling" />
-        <meta name="twitter:app:name:ipad" content="mk mobile detaling" />
-        <meta name="twitter:app:name:googleplay" content="mk mobile detaling" />
+        <meta name="twitter:app:name:iphone" content="Mk Mobile Detaling" />
+        <meta name="twitter:app:name:ipad" content="Mk Mobile Detaling" />
+        <meta name="twitter:app:name:googleplay" content="Mk Mobile Detaling" />
         {/* twitter meta tages  */}
         {/* og tages  */}
-        <meta property="og:title" content="mk mobile detailing" />
-        <meta property="og:site_name" content="mk mobile detailing" />
+        <meta property="og:title" content="Mk Mobile Detailing" />
+        <meta property="og:site_name" content="Mk Mobile Detailing" />
         <meta property="og:url" content="MK Mobile Detailing Services" />
         <meta
           property="og:description"
