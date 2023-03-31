@@ -7,16 +7,15 @@ export default async function handler(req, res) {
   switch (method) {
     case "POST":
       try {
-        await client.messages
-          .create({
-            body: `Hello, ${body.firstName} ${body.lastName} Is From ${body.address}. This Is My Email Account: ${body.email} And My mobile number is ${body.phone}`,
-            messagingServiceSid: process.env.SERVICE_SID,
-            to: process.env.PHONE_NUMBER,
-          })
-          .then((message) => console.log(message.sid));
+        const data = await client.messages.create({
+          body: `Hello, ${body.firstName} ${body.lastName} Is From ${body.address}. This Is My Email Account: ${body.email} And My mobile number is ${body.phone}`,
+          messagingServiceSid: process.env.SERVICE_SID,
+          to: process.env.PHONE_NUMBER,
+        });
 
         res.status(200).json({
           success: true,
+          data: data,
         });
       } catch (error) {
         res.status(400).json({ success: false, message: error.message });
