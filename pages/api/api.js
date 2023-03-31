@@ -1,22 +1,48 @@
-const accountSid = process.env.ACCOUNT_SID;
-const authToken = process.env.AUTH_TOKEN;
-const client = require("twilio")(accountSid, authToken);
+import axios from "axios";
+
 export default async function handler(req, res) {
   const { method, body } = req;
 
   switch (method) {
     case "POST":
       try {
-        const data = await client.messages.create({
-          body: `Hello, ${body.firstName} ${body.lastName} Is From ${body.address}. This Is My Email Account: ${body.email} And My mobile number is ${body.phone}`,
-          messagingServiceSid: process.env.SERVICE_SID,
-          to: process.env.PHONE_NUMBER,
+        var data = JSON.stringify({
+          service_id: process.env.ACCOUNT_SID,
+          template_id: process.env.TEMPLATE_ID,
+          user_id: process.env.USER_ID,
+          template_params: {
+            to: "",
+            email: body.email,
+            firstName: body.firstName,
+            lastName: body.lastName,
+            phone: body.phone,
+            address: body.address,
+          },
         });
 
-        res.status(200).json({
-          success: true,
+        var config = {
+          method: "post",
+          url: "https://api.emailjs.com/api/v1.0/email/send",
+          headers: {
+            origin: "http://localhost",
+            "Content-Type": "application/json",
+          },
           data: data,
-        });
+        };
+
+        axios(config)
+          .then(function (response) {
+            res.status(200).json({
+              success: true,
+              message: "Email sent! Please check your email!",
+            });
+          })
+          .catch(function (error) {
+            res.status(400).json({
+              success: false,
+              message: error,
+            });
+          });
       } catch (error) {
         res.status(400).json({ success: false, message: error.message });
       }
