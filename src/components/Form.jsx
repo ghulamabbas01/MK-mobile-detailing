@@ -7,6 +7,7 @@ import * as Yup from "yup";
 import { useFormik, Form, FormikProvider } from "formik";
 import { LoadingButton } from "@mui/lab";
 import axios from "axios";
+import toast from "react-hot-toast";
 const TextFieldStyle = styled(TextField)({
   background: "rgba(145, 158, 171, 0.12)",
   borderRadius: "8px 8px 0px 0px",
@@ -64,12 +65,13 @@ export default function FormComponent() {
         await axios
           .post("/api/api", values)
           .then(() => {
-            alert("Successfully sent message.");
+            toast.success("Successfully submitted!");
             setLoading(false);
             resetForm();
           })
           .catch(() => {
-            alert("Something went wrong!");
+            toast.error("Something went wrong!");
+
             setLoading(false);
             resetForm();
           });
