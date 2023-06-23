@@ -209,7 +209,7 @@ export default function VariableWidthGrid() {
                 <Box class="pricingCard">
                   <h3 class="pricingCardHeader">Silver</h3>
                   <div class="price">
-                    <sup>$250</sup>
+                    <sup>$100</sup>
                   </div>
                   <ul>
                     <li>
@@ -251,7 +251,7 @@ export default function VariableWidthGrid() {
                 <Box class="pricingCard">
                   <h3 class="pricingCardHeader">Gold</h3>
                   <div class="price">
-                    <sup>$350</sup>
+                    <sup>$150</sup>
                   </div>
                   <ul>
                     <li>
@@ -301,7 +301,7 @@ export default function VariableWidthGrid() {
                 <Box class="pricingCard">
                   <h3 class="pricingCardHeader">Platinum</h3>
                   <div class="price">
-                    <sup>$500</sup>
+                    <sup>$250</sup>
                   </div>
                   <ul>
                     <li>
